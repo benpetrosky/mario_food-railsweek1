@@ -1,6 +1,8 @@
 
 class Product < ActiveRecord::Base
  has_many :reviews
+accepts_nested_attributes_for :reviews
+
  scope :three_most_recent, -> { order(created_at: :desc).limit(3)}
  scope(:us_product, -> do
   where({:country_of_origin => "United States"})
