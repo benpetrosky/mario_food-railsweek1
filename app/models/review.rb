@@ -1,6 +1,6 @@
 
 class Review < ActiveRecord::Base
- belongs_to :product
+ belongs_to :product, optional: true
 
  validates :author, :presence => true
  validates :content_body, :presence => true, length: { in: 50..250 }
