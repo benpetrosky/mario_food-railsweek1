@@ -5,7 +5,7 @@ In particular, Mario is concerned about the information in his database being co
 
 Landing Page
 
- This page should also include the three most recently added products and the product with the most reviews. See more information in the Scopes section below.
+the product with the most reviews. See more information in the Scopes section below.
 
 
 Scopes
@@ -13,8 +13,7 @@ Scopes
 Your site should use scopes to display the following information on the site:
 
 The product with the most reviews.
-The three most recently added products.
-All products made in the USA for buyers that want to buy local products.
+
 
 Seeding
 
