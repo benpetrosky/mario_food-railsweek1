@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Product.destroy_all
+
+50.times do |index|
+  Product.create!(name: Faker::Food.product,
+                        country_of_origin: Faker::Lorem.sentence(20, false, 0).chop,
+                        cost: Faker::Number.decimal(2))
+end
+
+p "Created #{Product.count} spices"

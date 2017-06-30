@@ -3,16 +3,7 @@
 In particular, Mario is concerned about the information in his database being correct; your goal for today is to have the most comprehensive validations and callbacks to ensure information is properly saved and formatted in the database.
 
 
-Landing Page
 
-the product with the most reviews. See more information in the Scopes section below.
-
-
-Scopes
-
-Your site should use scopes to display the following information on the site:
-
-The product with the most reviews.
 
 
 Seeding
