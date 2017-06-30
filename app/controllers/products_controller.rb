@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   end
   def home
     @products = Product.three_most_recent
+    @us_products = Product.us_product
   end
   def show
     @product = Product.find(params[:id])

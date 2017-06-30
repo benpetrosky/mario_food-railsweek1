@@ -14,6 +14,12 @@
 
 <h3>All Products with a county of origin of "United States"</h3>
 
+<ul>
+  <% @us_products.each do |us_product| %>
+  <li><%= link_to us_product.name, product_path(us_product) %></li>
+  <% end %>
+</ul>
+
 <h3>The Product with the most reviews</h3>
 
 <p><%= link_to "All Products", products_path %></p>
