@@ -1,3 +1,19 @@
 <h1>Mario's food yelp place</h1>
 
+<p>
+  Mario is a great man that sells great food.  See what people think of the different products sold at Mario's.  Also add a review yourself.  Just click on All Products to get started.
+</p>
+
+<h3>The three most recently added products to the store. From most recent to third-most-recent</h3>
+
+<ol>
+  <% @products.each do |product| %>
+    <li><%= product.name %></li>
+  <% end %>
+</ol>
+
+<h3>All Products with a county of origin of "United States"</h3>
+
+<h3>The Product with the most reviews</h3>
+
 <p><%= link_to "All Products", products_path %></p>

@@ -2,7 +2,9 @@ class ProductsController < ApplicationController
   def index
     @products = Product.all
   end
-
+  def home
+    @products = Product.three_most_recent
+  end
   def show
     @product = Product.find(params[:id])
   end

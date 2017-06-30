@@ -5,11 +5,8 @@ In particular, Mario is concerned about the information in his database being co
 
 Landing Page
 
-The landing page should include basic information about the company and should allow users to easily navigate to other areas of the site. This page should also include the three most recently added products and the product with the most reviews. See more information in the Scopes section below.
+ This page should also include the three most recently added products and the product with the most reviews. See more information in the Scopes section below.
 
-Products
-
-The site needs to include a products section with a list of the tasty products that Mario sells. Each product should be clickable with a detail view.
 
 Scopes
 
@@ -18,10 +15,6 @@ Your site should use scopes to display the following information on the site:
 The product with the most reviews.
 The three most recently added products.
 All products made in the USA for buyers that want to buy local products.
-Validations
-
-Your site should include validations for the following:
-
 
 Seeding
 
