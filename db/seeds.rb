@@ -7,7 +7,24 @@ Review.destroy_all
   Product.create!(name: Faker::Food.spice,
                         country_of_origin: Faker::Address.country,
                         cost: Faker::Number.decimal(2),
-                        :reviews_attributes => [
+                        :reviews_attributes =>
+                          [
+                          {author: Faker::Name.unique.name,
+                          content_body: Faker::Lorem.characters(100),
+                          rating: Faker::Number.between(1, 5)},
+
+                          {author: Faker::Name.unique.name,
+                          content_body: Faker::Lorem.characters(100),
+                          rating: Faker::Number.between(1, 5)},
+
+                          {author: Faker::Name.unique.name,
+                          content_body: Faker::Lorem.characters(100),
+                          rating: Faker::Number.between(1, 5)},
+
+                          {author: Faker::Name.unique.name,
+                          content_body: Faker::Lorem.characters(100),
+                          rating: Faker::Number.between(1, 5)},
+                          
                           {author: Faker::Name.unique.name,
                           content_body: Faker::Lorem.characters(100),
                           rating: Faker::Number.between(1, 5)}
