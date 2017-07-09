@@ -29,9 +29,26 @@
 </div>
 
 <h3>The Products with the most reviews</h3>
+<div class="most_review_product">
+
 <% @most_review_product.each do |product| %>
+<ul>
+
+
 <li><%= link_to product.name, product_path(product)%></li>
 <% end %>
+</ul>
+</div>
 
 
 <%= link_to "All Products", products_path %>
+
+<div class="gallery">
+  <img class="left" src="assets/shopper1.jpeg" alt="shopper1">
+  <img class="left" src="assets/shopper2.jpeg" alt="shopper1">
+  <img class="right" src="assets/shopper3.jpeg" alt="shopper1">
+  <img class="right" src="assets/shopper4.jpeg" alt="shopper1">
+  <img class="mid" src="assets/shopper5.jpeg" alt="shopper1">
+  <img class="mid" src="assets/shopper6.jpeg" alt="shopper1">
+
+</div>
