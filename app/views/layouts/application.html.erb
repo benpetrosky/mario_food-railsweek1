@@ -16,8 +16,12 @@ flash[:notice]  -->
 <!-- erb tags -->
 
     <%= yield %>
+    <div class="footer">
+      <%= link_to "Home Page", "/"  %>
+      <%= link_to "All Products", products_path %>
+    </div>
 
-    <%= link_to "Home Page", "/"  %>
+
   </div>
 
   </body>

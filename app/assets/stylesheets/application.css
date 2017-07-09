@@ -19,11 +19,16 @@ body {
   opacity: 0.8;
   position: relative;
 }
+.footer {
+  text-align: center;
+
+}
 
 h1 {
   text-align: center;
   text-decoration: underline;
   color: red;
+
 }
 .america {
   text-align: center;
@@ -37,7 +42,8 @@ h3 {
   color: #FF5733;
   text-shadow: 50%;
   background-color: green;
-
+  text-align: center;
+  opacity: 1;
 }
 .discount{
   border: 1px solid black;
@@ -45,7 +51,7 @@ h3 {
   width: 200px;
   padding: 3px;
   text-align: center;
-  background-color: green;
+  background-color: blue;
   color: white;
   position: absolute;
   top: 0px;
@@ -87,14 +93,13 @@ ul li:hover{
 
 }
 
-h3 {
-  text-align: center;
-}
-
 .gallery {
   border: 2px solid black;
   margin: 5px;
   padding: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 img{
   height: 200px;
