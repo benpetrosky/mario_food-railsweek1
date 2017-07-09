@@ -1,8 +1,9 @@
 <h1>Mario's food yelp place</h1>
 
-<p>
+<p class="about">
   Mario is a great man that sells great food.  See what people think of the different products sold at Mario's.  Also add a review yourself.  Just click on All Products to get started.
 </p>
+<div class="three-most-recent">
 
 <h3>The three most recently added products to the store. From most recent to third-most-recent</h3>
 
@@ -11,6 +12,8 @@
     <li><%= link_to product.name, product_path(product) %></li>
   <% end %>
 </ol>
+</div>
+<div class="america">
 
 <h3>All Products with a county of origin of "United States"</h3>
 
@@ -19,6 +22,11 @@
   <li><%= link_to us_product.name, product_path(us_product) %></li>
   <% end %>
 </ul>
+</div>
+<div class="discount">
+  <p>Refer a Friend. Earn 10% off Meat Products!</p>
+
+</div>
 
 <h3>The Products with the most reviews</h3>
 <% @most_review_product.each do |product| %>
@@ -26,4 +34,4 @@
 <% end %>
 
 
-<p><%= link_to "All Products", products_path %></p>
+<%= link_to "All Products", products_path %>
